@@ -63,4 +63,24 @@ navLinks[3].text = siteContent.nav["nav-item-4"]
 navLinks[4].text = siteContent.nav["nav-item-5"]
 navLinks[5].text = siteContent.nav["nav-item-6"]
 
-const middleHeaders = document.querySelectorAll(".text-content h4")
+const bottomHeaders = document.querySelectorAll(".text-content h4")
+bottomHeaders[0].innerText = siteContent["main-content"]["features-h4"]
+bottomHeaders[1].innerText = siteContent["main-content"]["about-h4"]
+bottomHeaders[2].innerText = siteContent["main-content"]["services-h4"]
+bottomHeaders[3].innerText = siteContent["main-content"]["product-h4"]
+bottomHeaders[4].innerText = siteContent["main-content"]["vision-h4"]
+
+const bottomPara = document.querySelectorAll(".text-content p")
+bottomPara[0].innerHTML = siteContent["main-content"]["features-content"]
+bottomPara[1].innerHTML = siteContent["main-content"]["about-content"]
+bottomPara[2].innerHTML = siteContent["main-content"]["services-content"]
+bottomPara[3].innerHTML = siteContent["main-content"]["product-content"]
+bottomPara[4].innerHTML = siteContent["main-content"]["vision-content"]
+
+const contactHeader = document.querySelector(".contact h4")
+contactHeader.innerText = siteContent["contact"]["contact-h4"]
+
+const contactPara = document.querySelectorAll(".contact p")
+contactPara[0].innerText = siteContent["contact"]["address"]
+contactPara[1].innerText = siteContent["contact"]["phone"]
+contactPara[2].innerText = siteContent["contact"]["email"]
