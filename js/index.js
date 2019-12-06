@@ -47,9 +47,20 @@ document.getElementById("cta-img").src="img/header-img.png";
 
 document.getElementById("middle-img").src ="img/mid-page-accent.jpg";
 
-// document.querySelector(".logo button").textContent="Get Started";
+const ctaText = document.querySelector(".cta-text h1")
+siteContent.cta.h1 = "DOM <br> IS <br> AWESOME"
+ctaText.innerHTML = siteContent.cta.h1
+
+const buttonText = document.querySelector(".cta button");
+buttonText.innerText = siteContent.cta.button
 
 const navLinks = document.querySelectorAll("nav a");
-navLinks.forEach((element, index) => {
-  element.textContent=siteContent["nav"][`nav-item-${index}`]
-}) ;
+console.log(navLinks)
+navLinks[0].text = siteContent.nav["nav-item-1"]
+navLinks[1].text = siteContent.nav["nav-item-2"]
+navLinks[2].text = siteContent.nav["nav-item-3"]
+navLinks[3].text = siteContent.nav["nav-item-4"]
+navLinks[4].text = siteContent.nav["nav-item-5"]
+navLinks[5].text = siteContent.nav["nav-item-6"]
+
+const middleHeaders = document.querySelectorAll(".text-content h4")
